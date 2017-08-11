@@ -22,8 +22,10 @@ func getMaxDiff(input []int) (int, int, int) {
 
 	for i := 0; i < len(input); i++ {
 
-		if (input[i] - min) > diff { diff = input[i] - min ; l = i }
+		// If new diff is greater then update variables
+		if (input[i] - min) > diff { diff = input[i] - min ; l = i } 
 
+		// If new integer is minimum then update variables
 		if input[i] < min { min = input[i]; m = i  }
 		
 	}
